@@ -1,9 +1,1 @@
-{
-    "java.project.sourcePaths": [
-        "src/main/java"
-    ],
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "C:/javafx-sdk-21/lib/**/*.jar"
-    ]
-}
+{ "java.project.sourcePaths": ["src/main/java"], "java.project.referencedLibraries": ["lib/**/*.jar", "C:/Users/yassi/javafx-sdk-21.0.7/lib/**/*.jar"], "java.jdt.ls.java.home": "C:/Program Files/Microsoft/jdk-21.0.10.7-hotspot" }
