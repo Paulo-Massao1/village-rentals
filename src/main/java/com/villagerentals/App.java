@@ -38,7 +38,9 @@ public class App extends Application {
 
                     @Override
                     public void goToEquipment() {
+
                         showEquipmentView();
+
                     }
 
                     @Override
@@ -59,11 +61,13 @@ public class App extends Application {
         primaryStage.setScene(scene);
     }
 
+
     private void showEquipmentView() {
         EquipmentView equipmentView = new EquipmentView();
         Scene scene = new Scene(equipmentView.createView(this::showMainMenu), 900, 600);
         primaryStage.setScene(scene);
     }
+
 
     public static void main(String[] args) {
         launch(args);
