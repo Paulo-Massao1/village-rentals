@@ -1,3 +1,4 @@
+
 package com.villagerentals.ui;
 
 import com.villagerentals.dao.CustomerDAO;
@@ -111,7 +112,7 @@ public class CustomerView {
         customerTable.getColumns().add(phoneCol);
         customerTable.getColumns().add(emailCol);
 
-        customerTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+        customerTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY_FLEX_LAST_COLUMN);
     }
 
     private void loadCustomers() {

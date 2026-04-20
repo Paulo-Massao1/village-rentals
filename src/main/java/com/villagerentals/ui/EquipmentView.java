@@ -117,7 +117,7 @@ public class EquipmentView {
         equipmentTable.getColumns().add(dailyRateCol);
         equipmentTable.getColumns().add(categoryIdCol);
 
-        equipmentTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+        equipmentTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY_FLEX_LAST_COLUMN);
     }
 
     private void loadEquipment() {

@@ -4,6 +4,7 @@ import com.villagerentals.dao.DatabaseManager;
 import com.villagerentals.ui.CustomerView;
 import com.villagerentals.ui.EquipmentView;
 import com.villagerentals.ui.MainMenuView;
+import com.villagerentals.ui.RentalView;
 import com.villagerentals.util.SampleDataLoader;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -45,7 +46,7 @@ public class App extends Application {
 
                     @Override
                     public void goToRentals() {
-                        // Person 4 area
+                        showRentalView();
                     }
                 }),
                 900,
@@ -68,6 +69,11 @@ public class App extends Application {
         primaryStage.setScene(scene);
     }
 
+    private void showRentalView() {
+        RentalView rentalView = new RentalView();
+        Scene scene = new Scene(rentalView.createView(this::showMainMenu), 900, 600);
+        primaryStage.setScene(scene);
+    }
 
     public static void main(String[] args) {
         launch(args);

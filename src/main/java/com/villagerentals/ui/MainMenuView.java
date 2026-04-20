@@ -1,3 +1,4 @@
+
 package com.villagerentals.ui;
 
 import javafx.geometry.Insets;
@@ -32,19 +33,10 @@ public class MainMenuView {
         rentalsBtn.setPrefWidth(220);
 
         customersBtn.setOnAction(e -> nav.goToCustomers());
-
-
         equipmentBtn.setOnAction(e -> nav.goToEquipment());
-
-        equipmentBtn.setOnAction(e -> {
-            // Person 2 screen placeholder
-        });
-
-        rentalsBtn.setOnAction(e -> {
-            // Person 4 screen placeholder
-        });
+        rentalsBtn.setOnAction(e -> nav.goToRentals());
 
         root.getChildren().addAll(title, customersBtn, equipmentBtn, rentalsBtn);
         return root;
     }
-
+}
