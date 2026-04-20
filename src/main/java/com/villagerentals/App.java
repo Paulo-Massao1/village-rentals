@@ -2,6 +2,7 @@ package com.villagerentals;
 
 import com.villagerentals.dao.DatabaseManager;
 import com.villagerentals.ui.CustomerView;
+import com.villagerentals.ui.EquipmentView;
 import com.villagerentals.ui.MainMenuView;
 import com.villagerentals.util.SampleDataLoader;
 import javafx.application.Application;
@@ -37,7 +38,9 @@ public class App extends Application {
 
                     @Override
                     public void goToEquipment() {
-                        // Person 2 area
+
+                        showEquipmentView();
+
                     }
 
                     @Override
@@ -57,6 +60,14 @@ public class App extends Application {
         Scene scene = new Scene(customerView.createView(this::showMainMenu), 900, 600);
         primaryStage.setScene(scene);
     }
+
+
+    private void showEquipmentView() {
+        EquipmentView equipmentView = new EquipmentView();
+        Scene scene = new Scene(equipmentView.createView(this::showMainMenu), 900, 600);
+        primaryStage.setScene(scene);
+    }
+
 
     public static void main(String[] args) {
         launch(args);

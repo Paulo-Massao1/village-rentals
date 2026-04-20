@@ -14,6 +14,11 @@ public class DatabaseManager {
      * The database file is created automatically if it doesn't exist.
      */
     public static Connection getConnection() throws SQLException {
+        try {
+            Class.forName("org.sqlite.JDBC");
+        } catch (ClassNotFoundException e) {
+            System.err.println("SQLite driver not found: " + e.getMessage());
+        }
         return DriverManager.getConnection(DB_URL);
     }
 
@@ -79,3 +84,4 @@ public class DatabaseManager {
         }
     }
 }
+

@@ -33,6 +33,9 @@ public class MainMenuView {
 
         customersBtn.setOnAction(e -> nav.goToCustomers());
 
+
+        equipmentBtn.setOnAction(e -> nav.goToEquipment());
+
         equipmentBtn.setOnAction(e -> {
             // Person 2 screen placeholder
         });
@@ -44,4 +47,4 @@ public class MainMenuView {
         root.getChildren().addAll(title, customersBtn, equipmentBtn, rentalsBtn);
         return root;
     }
-}
+
